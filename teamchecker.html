@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Checker</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right,#F075AE,#AEDEFC);
+            text-align: center;
+        }
+        .nav {
+            background: white;
+            padding: 15px;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card {
+            background: white;
+            width: 450px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        .message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="index.html">Players</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="teamchecker.html">Team Checker</a>
+</div>
+
+<div class="card">
+    <h2>Intramurals Eligibility</h2>
+
+    <form method="POST">
+
+        <p>Online registration done?</p>
+        <input type="radio" name="registration" value="yes"> Yes
+        <input type="radio" name="registration" value="no"> No
+
+        <p>Medical clearance?</p>
+        <input type="radio" name="medical" value="yes"> Yes
+        <input type="radio" name="medical" value="no"> No
+
+        <p>Grade</p>
+        <select name="grade">
+            <option value="">Select Grade</option>
+            <option value="7">Grade 7</option>
+            <option value="8">Grade 8</option>
+            <option value="9">Grade 9</option>
+            <option value="10">Grade 10</option>
+        </select>
+
+        <p>Section</p>
+        <select name="section">
+            <option value="">Select Section</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Topaz">Topaz</option>
+            <option value="Emerald">Emerald</option>
+            <option value="Jade">Jade</option>
+            <option value="Sapphire">Sapphire</option>
+        </select>
+
+        <button type="submit">Check Eligibility</button>
+    </form>
+
+</div>
+
+</body>
+</html>

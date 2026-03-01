@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #F5D2D2, #F6B1CE);
+            text-align: center;
+        }
+        .nav {
+            background: white;
+            padding: 15px;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card {
+            background: white;
+            width: 400px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #E69DB8;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="index.html">Players</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="teamchecker.html">Team Checker</a>
+</div>
+
+<div class="card">
+    <h2>Create Account</h2>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="At least 7 characters" required>
+        <input type="text" name="password" placeholder="At least 10 characters, 1 letter & 1 number" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>
